@@ -2,53 +2,76 @@
 
 //- Write a single line comment which says : comments can make code readable
 
+
+// comments can make code redable 
+
+
+
 //- Write a multiline comment which says : comments can make code readable, easy to reuse and informative
 
-//- Create a variable.js file and declare variables and assign string, boolean, undefined and null data types
-var Name;
-var age = 25;
-var isOnline = true;
-var isEmployed = null;
-var isUnemployed = undefined;
+/*      comments can make code readable,
+                                        easy to reuse and informative */
+
+
+
+//-  and declare variables and assign string, boolean, undefined and null data types
+
+
+var string = "qq"
+var boolean = true
+var test
+var Name = null
+
+
+
+
 
 
 //- in variable.js file and use the JavaScript typeof operator to check different data types.
+
+typeof string
+typeof boolean
+typeof test
+typeof Name
+
 //  Check the data type of each variable
-typeof Name;
-typeof age;
-typeof isOnline;
-typeof isEmployed;
-typeof isUnemployed;
+string
+boolean
+// undefined
+// null 
+
 
 //- Declare four variables without assigning values
-var Name;
-var age;
-var isOnline;
-var isEmployed;
+
+var firstname
+var lastname
+var isOnline
+var country
+
 
 
 //- Declare variables to store your first name, last name, isOnline, country and age(number) in multiple lines
-var firstname = "hamza"
-var lastname = "ben hamida"
-var isOnline = true;
-var country = "algerie"
+var firstname
+var lastname
+var isOnline
+var country
+var age
 
 //- Declare variables to store your first name, last name, marital status, country and age(number) in a single line
-var firstname = "hamza",
-    lastname = "ben hamida",
-    maritalStatus = "single",
-    country = "algerie",
-    age = 25;
+var firstname, lastname, isOnline, country, age
 
 // - Declare two variables myAge and yourAge and assign them initial values and log to the browser console like this :
 //   I am 25 years old.
 //   You are 30 years old.
 
-var myAge = 25;
-var yourAge = 30;
+var myAge = "I am 25 years old"
+console.log(myAge)
 
-console.log("iam" + myAge + "years old")
-console.log("you are ", yourAge, "years old")
+var yourAge = "you are 30 years old"
+console.log(yourAge)
+
+
+
 
 
 
@@ -59,27 +82,27 @@ Figure out the result of the following comparison expression first without using
 the result confirm it using console.log():
 
 - 4 > 3 // true
-- 4 >= 3 //true
-- 4 < 3
-- 4 <= 3
-- 4 == 4
-- 4 === 4 //true
-- 4 != 4
-- 4 !== 4 //false
-- 4 == '4' //true
-- 4 != '4'//false
-- 4 === '4'
-- 4 !== '4'
-- (4 > 3) && (10 < 12)// true
-- (4 > 3) && (10 > 12)// false
+- 4 >= 3 // true
+- 4 < 3 // false 
+- 4 <= 3 // true
+- 4 == 4 // true
+- 4 === 4 // true
+- 4 != 4 // false
+- 4 !== 4 // false
+- 4 == '4' // true
+- 4 != '4'// false
+- 4 === '4' // false 
+- 4 !== '4' // false
+- (4 > 3) && (10 < 12)// true 
+- (4 > 3) && (10 > 12)// true
 - (4 > 3) || (10 < 12)// true
 - (4 > 3) || (10 > 12)// true
-- !(4 > 3) //false
-- !(4 < 3) //true
-- !(false) //true
-- !(4 > 3 && 10 < 12) //false
-- !(4 > 3 && 10 > 12) //true
-- !(4 === '4') //true
+- !(4 > 3) // false
+- !(4 < 3) // true 
+- !(false) // true
+- !(4 > 3 && 10 < 12) // false
+- !(4 > 3 && 10 > 12) // true
+- !(4 === '4') // true
 console.log()
 */
 
@@ -98,6 +121,35 @@ console.log()
   (circumference = 2 x pi x r) where pi = 3.14
   const pi = 3,14
 */
+
+var base = prompt("base")
+var height = prompt("height")
+var area = 0.5 * base * height
+console.log(area)
+
+var side1 = prompt("side a")
+var side2 = prompt("side b")
+var side3 = prompt("side c")"
+var perimeter = side1 + side2 + side3
+console.log(perimeter)
+
+
+var width = prompt("width")
+var length = prompt("length")
+var area = width * length
+console.log(area)
+var perimeter = 2 * (length + width)
+console.log(perimeter)
+
+
+const pi = 3.14
+var r = prompt("radius")
+var area = pi * r * r
+console.log(area)
+var circumference = 2 * pi * r
+console.log(circumference)
+
+
 //--------------------------------------------------- EXO 4 ---------------------------------------------------
 
 
@@ -109,10 +161,30 @@ console.log()
 - Compare the values of myAge and yourAge using if … else. Based on the comparison and
  log the result to console
   stating who is older (me or you). Use prompt(“Enter your age:”) to get the age as input.
+*/
 
+var Age = prompt("Enter your age")
+if (Age >= 18) {
+  console.log("You are old enough to drive")
+}
+else {
+  console.log("wait until 18 or older")
+}
 
+  
+}
+
+/*
 - Even numbers are divisible by 2 and the remainder is zero.
   How do you check, if a number is even or not ?
+*/
+
+var test = 8
+console.log(test % 2)
+
+
+
+/*
 - Write a code which can give grades to students according to theirs scores:
   90-100, A
   70-89, B
@@ -125,6 +197,38 @@ console.log()
   March, April or May, the season is Spring
   June, July or August, the season is Summer
 */
+
+
+var score = prompt("entre your score")
+if (score >= 90 && score <= 100) {
+  console.log("A")
+} else if (score >= 80 && score <= 89) {
+  console.log("B")
+} else if (score >= 70 && score <= 79) {
+  console.log("C")
+} else if (score >= 60 && score <= 69) {
+  console.log("D")
+} else if (score >= 50 && score <= 59) {
+  console.log("E")
+} else if (score >= 00 && score <= 49) {
+  console.log("F")
+} else {
+  console.log("invalid")
+}
+
+var season = prompt("entre your month")
+if (month == "September" || month == "October" || month == "November") {
+  console.log("Autumn");
+} else if (month == "December" || month == "January" || month == "February") {
+  console.log("Winter");
+} else if (month == "March" || month == "April" || month == "May") {
+  console.log("Spring");
+} else if (month == "June" || month == "July" || month == "August") {
+  console.log("Summer");
+} else {
+  console.log("invalid month");
+}
+
 
 //--------------------------------------------------- EXO 5 ---------------------------------------------------
 /*
