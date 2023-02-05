@@ -4,7 +4,7 @@ export const movies = [{
         image: "https://m.media-amazon.com/images/I/519NBNHX5BL._AC_SY580_.jpg",
         year: 1994,
         rating: 9.2,
-        watched: true,
+        watched: false,
         genres: ['Crime', 'Drama'],
     },
     {
@@ -13,7 +13,7 @@ export const movies = [{
         image: "https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg",
         year: 1972,
         rating: 9.2,
-        watched: true,
+        watched: false,
         genres: ['Crime', 'Drama'],
     },
     {

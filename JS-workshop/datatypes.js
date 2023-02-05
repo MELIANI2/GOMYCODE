@@ -27,7 +27,7 @@ console.log(typeof isonline);
 const firstName = "hamza";
 const secondname = "Chebbah";
 const resulat = firstName + " " + secondname;
-console.log(resulat); //hamzachebbah 
+console.log(resulat); //hamza chebbah 
 console.log(typeof resulat); // string
 
 // length (longueur de la chaine de caractere)

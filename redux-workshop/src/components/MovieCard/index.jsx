@@ -1,10 +1,13 @@
-import classes from "./style.module.css"
+import { useDispatch } from "react-redux";
+import { Togglewatched } from "../../apps/Slices/movieSlice";
+import classes from "./style.module.css";
 
-const MovieCard = ({ image, title, rating, type, id, handleToggle }) => {
+const MovieCard = ({ image, title, rating, type, id }) => {
+	const Dispatch = useDispatch();
 	return (
 		<div className={classes.container}>
 			<img src={image} alt={title} />
-			<button onClick={() => handleToggle(id)}>
+			<button onClick={() => Dispatch(Togglewatched(id))}>
 				{type === "mylist" ? "-" : "+"}
 			</button>
 
